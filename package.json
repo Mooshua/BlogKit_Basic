@@ -2,7 +2,7 @@
   "name": "@blogkit/basic-theme",
   "version": "1.0.0",
   "description": "A base theme for BlogKit",
-  "repository": {},
+  "repository": "git://github.com/Mooshua/BlogKit_Basic.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
