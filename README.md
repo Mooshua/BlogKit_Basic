@@ -1,38 +1,15 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Creating a project
+# BlogKit Base Theme
+This theme comes with BlogKit, and is a great starting point for creating your own theme.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Create your theme
+Fork this repository, and take a look at the available components (in /src/lib). If you see a component you wish to change, you can do so by adjusting the HTML (sans Svelte tags) in [the Tailwind Playground](https://play.tailwindcss.com/) until you are satisfied. Once you are finished, copy the resulting HTML, replacing any missing svelte directives.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+### Customize Tailwind
+BlogKit natively comes with Tailwindcss, and this is what you are expected to theme your site in. You can edit `src/lib/app.css` and `src/lib/tailwind.js` to edit tailwind configurations. 
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+### Deploying
+To deploy your theme, publish it to NPM (*If you wish your theme to be published into the BlogKit organization, reach out to a maintainer*) and set your `VITE_BK_THEME` ENV var to your NPM package.
 
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+**REMINDER**: You must rebuild a BlogKit app after changing the theme environment variable.

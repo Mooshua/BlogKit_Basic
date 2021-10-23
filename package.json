@@ -1,6 +1,6 @@
 {
   "name": "@blogkit/basic-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "svelte-kit package"
   },
