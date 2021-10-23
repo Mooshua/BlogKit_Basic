@@ -1,14 +1,16 @@
 {
   "name": "@blogkit/basic-theme",
-  "version": "1.0.0",
-  "description": "A base theme for BlogKit",
-  "repository": "git://github.com/Mooshua/BlogKit_Basic.git",
+  "version": "1.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "svelte-kit package"
   },
-  "keywords": [
-    "BlogKit"
-  ],
-  "author": "Mooshua",
-  "license": "MIT"
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "svelte": "^3.42.6",
+    "svelte2tsx": "^0.4.7",
+    "typescript": "^4.4.4"
+  },
+  "type": "module",
+  "exports": {
+  }
 }
