@@ -1,6 +1,5 @@
 <script>
-    export let value = ""
-    export let meta = ""
+    export let Token;
 
     let lvlToClass = [
         "text-4xl",
@@ -11,8 +10,6 @@
     ]
 </script>
 
-<h1 id="{value?.toLowerCase()}" class="{lvlToClass[meta]} text-white font-bold">
-    {value}
+<h1 id="{Token?.text?.toLowerCase()}" class="{lvlToClass[Token?.depth]} text-white font-bold">
+    <slot />
 </h1>
-
-<slot />

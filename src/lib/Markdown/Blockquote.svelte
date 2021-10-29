@@ -1,10 +1,7 @@
 <script>
-    export let value = ""
-    export let meta = ""
-
-    
+    export let Token
 </script>
 
-<div class="bg-gray-800 border-l-8 border-gray-700 rounded-lg p-4">
-    {@html value}
+<div class="bg-gray-800 border-l-8 border-gray-700 text-gray-200 rounded-lg p-4">
+    <slot />
 </div> 

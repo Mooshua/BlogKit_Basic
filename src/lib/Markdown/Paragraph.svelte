@@ -1,10 +1,9 @@
 <script>
-    export let value = ""
-    export let meta = ""
+    export let Token;
 
     
 </script>
 
 <p>
-    {@html value}
+    <slot />
 </p> 

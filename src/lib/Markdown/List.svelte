@@ -1,16 +1,16 @@
 <script>
 
-    export let value;
-    export let meta;
+    export let Token
+
 </script>
 
-{#if meta?.ordered }
-    <ol class="list-decimal" start="{meta?.ordered || 1}">
-        {@html value}
+{#if Token?.ordered }
+    <ol class="list-decimal" start="{Token?.ordered || 1}">
+        <slot />
     </ol>
 {:else}
-    <ul class="list-disc" start="{meta?.ordered || 1}">
-        {@html value}
+    <ul class="list-disc" start="{Token?.ordered || 1}">
+        <slot />
     </ul> 
 {/if}
 
