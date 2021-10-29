@@ -2,7 +2,8 @@
   "name": "@blogkit/basic-theme",
   "version": "1.0.2",
   "scripts": {
-    "build": "svelte-kit package"
+    "build": "svelte-kit package",
+    "b2": "svelte-kit package && cd ./package/ && npm link && cd ../"
   },
   "devDependencies": {
     "@sveltejs/kit": "next",

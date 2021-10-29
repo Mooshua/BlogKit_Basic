@@ -11,7 +11,7 @@
     ]
 </script>
 
-<h1 class="{lvlToClass[meta]} text-white font-bold">
+<h1 id="{value?.toLowerCase()}" class="{lvlToClass[meta]} text-white font-bold">
     {value}
 </h1>
 
