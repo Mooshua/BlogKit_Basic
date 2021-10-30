@@ -2,4 +2,8 @@
     export let Token
 </script>
 
-<span>{Token?.text}</span>
+{#if Token.tokens != undefined}
+    <slot />
+{:else}
+    {@html Token?.text}
+{/if}

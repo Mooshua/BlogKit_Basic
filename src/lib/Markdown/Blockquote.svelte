@@ -2,6 +2,6 @@
     export let Token
 </script>
 
-<div class="bg-gray-800 border-l-8 border-gray-700 text-gray-200 rounded-lg p-4">
+<div class="text-white pointer-events-none text-center px-8 space-y-4 my-8">
     <slot />
 </div> 
