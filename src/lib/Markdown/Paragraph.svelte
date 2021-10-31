@@ -4,6 +4,6 @@
     
 </script>
 
-<p>
+<p class="">
     <slot />
 </p> 
