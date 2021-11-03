@@ -13,6 +13,7 @@
     <title>
         {Article?.article?.title}
     </title>
+    <meta name="description" content={Article?.article?.subtitle} />
 </svelte:head>
 
 <div class="px-4 sm:px-8">

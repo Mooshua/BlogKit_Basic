@@ -14,5 +14,10 @@ module.exports = {
             blue: colors.blue,
             white: "#fff"
         }
+    },
+    variants: {
+        extend: {
+            backgroundColor: [ 'even', ],
+        }
     }
 }
